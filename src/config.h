@@ -236,6 +236,11 @@
 /* Side Button 2 */
 #define BLKEY_INPUT_GPIO SN_GPIO2
 #define BLKEY_INPUT_PIN 7
+#elif defined(MARVO_K6901) //SN32F260 (VS11K15A)
+ #include "SN32F260.h"
+#define SN32_BOOTLOADER_ADDRESS 0x1FFF0009
+#define BOOT0_GPIO SN_GPIO3
+#define BOOT0_PIN 5
 #else
 #error Not configured for this target.
 #endif
