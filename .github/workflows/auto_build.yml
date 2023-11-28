@@ -2,14 +2,6 @@ name: Compile Firmware
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-    - master
-  pull_request:
-    branches:
-    - master
-
-
   
 jobs:
   Build:
